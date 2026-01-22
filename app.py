@@ -43,7 +43,7 @@ input_data = pd.DataFrame([{
 }])
 
 # Scale numeric columns
-scaled_data = scaler.transform(input_data)
+scaled_data = scaler.transform(input_data.values)
 
 # Predict
 if st.button("Check Fraud 🚨"):
